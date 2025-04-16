@@ -1,73 +1,51 @@
 # ✈️ Travel Management System
 
-A simple **C++ console-based project** that simulates a Travel Management System allowing users to register, login, and book flights between major Indian cities. The system uses the **Bellman-Ford algorithm** to find the cheapest route between two cities, even if no direct flight is available.
-
----
+A C++ console-based application that allows users to find the cheapest flight routes between 15 major Indian cities using the **Bellman-Ford algorithm**. Includes login system, ticket booking, and file handling for persistent data.
 
 ## 🚀 Features
 
-- ✅ User Registration and Login System (with file handling)
-- ✅ Display available cities
-- ✅ Book tickets for multiple passengers
-- ✅ Choose between direct or cheaper connecting flights
-- ✅ Generates E-Tickets with passenger details
-- ✅ Uses Bellman-Ford Algorithm for finding cheapest travel path
-- ✅ Saves ticket info to file for persistence
+- 🔐 User Registration & Login
+- 🏙️ Choose from 15 Indian cities
+- 💰 Calculates cheapest fare (direct or via other cities)
+- 🎫 Passenger detail entry & E-Ticket generation
+- 💾 Saves login and ticket info to files
 
----
+## 🧠 Algorithm
 
-## 📌 Cities Covered
+Uses the **Bellman-Ford Algorithm** to calculate the minimum cost between cities, considering both direct and indirect connections.
 
-- Delhi
-- Mumbai
-- Chennai
-- Kolkata
-- Kerala
-- Hyderabad
-- Pune
-- Goa
-- Bangalore
-- Amritsar
-- Jaipur
-- Patna
-- Puducherry
-- Srinagar
-- Bhopal
+## 🛠️ Tech Stack
 
----
+- **Language:** C++
+- **Concepts:** File Handling, Structures, Algorithms
 
-## 🛠️ How It Works
+## 📁 Files
 
-### 1. User Authentication
-- Create an account or log in using a username and password.
-- Data is saved in a file `login.txt`.
+- `travel.cpp` - Main source code
+- `login.txt` - Stores usernames & passwords
+- `ticket.txt` - Stores ticket info
 
-### 2. Booking Flights
-- Choose source and destination cities.
-- System checks for direct flight or computes minimum cost via other cities.
-- Uses Bellman-Ford algorithm to update cost matrix.
+## ▶️ How to Run
 
-### 3. Passenger Info & E-Ticket
-- Enter passenger details.
-- Confirm booking and receive an E-Ticket.
-- Info saved to `ticket.txt`.
+```bash
+g++ travel.cpp -o travel
+./travel
+```
 
----
+## 🙋‍♂️ Author
 
-## 💻 Technologies Used
+**Ashish Poudel**
 
-- Language: C++
-- Algorithm: Bellman-Ford
-- File Handling: `fstream`
-- Data Structures: Arrays, Structs, Classes
+## 🏆 Credits
 
----
+Developed by Buzzing Bugs 🚀
 
-## 📂 File Structure
+| Name         | Student ID | Group |
+| ------------ | ---------- | ----- |
+| Diya Pagi    | 202401258  | G4    |
+| Bhavi Rana   | 202401176  | G3    |
+| Aarushi Shah | 202401193  | G3    |
+| Harivadan    | 202401257  | G4    |
 
-```plaintext
-.
-├── travel_management.cpp   # Main program file
-├── login.txt               # Stores usernames and passwords (auto-created)
-├── ticket.txt              # Stores ticket booking details (auto-created)
-└── README.md               # Project documentation
+
+
